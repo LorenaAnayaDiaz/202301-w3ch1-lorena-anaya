@@ -1,0 +1,23 @@
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+    jest: true,
+  },
+  extends: 'xo',
+  overrides: [
+    {
+      extends: ['xo-typescript'],
+      files: ['*.ts', '*.tsx'],
+    },
+  ],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  rules: {
+    indent: ['Error', 2],
+    'object-curly-spacing': ['error', 'always'],
+  },
+  ignorePatterns: ['**public/**/*.js', 'jest.config.ts', '**/**.test.ts'],
+};
