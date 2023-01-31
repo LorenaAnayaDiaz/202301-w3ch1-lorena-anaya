@@ -15,9 +15,9 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
+  ignorePatterns: ['**public/**/*.js', 'jest.config.ts'],
   rules: {
     indent: ['Error', 2],
-    'object-curly-spacing': ['error', 'always'],
+    'object-curly-spacing': ['Error', 'always'],
   },
-  ignorePatterns: ['**public/**/*.js', 'jest.config.ts', '**/**.test.ts'],
 };
